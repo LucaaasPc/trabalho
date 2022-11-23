@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous">
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Partidas</title>
 </head>
 
@@ -12,18 +19,34 @@
     <section class="menu-partidas">
         <header>
             <div class="center menu-container">
-                <div class ="logo">
-                    <img src="images/logo_esportshub.png">
+              <div class="logo">
+                <img src="images/logo_esportshub.png" />
+              </div>
+              <nav class="nav">
+               <div class="menu">
+                <ul>
+                  <li>
+                    <a  href="index.html">Home</a>
+                  </li>
+                  <li><a class="active-menu" href="partidas.html">Partidas</a></li>
+                  <li><a href="equipes.html">Equipes</a></li>
+                  <li><a href="campeonatos.html">Campeonatos</a></li>
+                  <li><a href="noticias.html">Noticias</a></li>
+                </ul>
+    
+               </div>
+                <div class="toggle icon-menu">
+                  <i class="ph-list"></i>
                 </div>
-                <div class="menu">
-                    <a href="index.html">Home</a>
-                    <a class="active-menu" href="partidas.html">Partidas</a>
-                    <a href="equipes.html">Equipes</a>
-                    <a href="campeonatos.html">Campeonatos</a>
-                    <a href="noticias.html">Noticias</a>
+    
+                <div class="toggle icon-x">
+              
+                    <i class="ph-x"></i>
+                  
                 </div>
-        
+              </nav>
             </div>
+          </header>
 
             <div class="partidas"> 
                 <br/>
@@ -49,9 +72,18 @@
                 </div>
 
             </div>
-        </header>
+
         </section>  
 
         <footer><p>Todos os direitos Reservados!</p></footer>
+
+       <!-- JavaScript Bundle with Popper -->
+       <script
+       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+       crossorigin="anonymous"
+     ></script>
+ 
+     <script src="js/main.js"></script>
 </body>
 </html>
