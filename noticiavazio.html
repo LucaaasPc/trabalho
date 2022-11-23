@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
     <title>Esports Hub</title>
 </head>
 
 <body>
-<section class="menu-partidas">
+<section class="menu-partidas" id="noticiaexemplo">
     <header>
         <div class="center menu-container">
             <div class ="logo">
@@ -31,51 +32,28 @@
     <div class="produto-single">
         
         <h3>Furia bate Gambit e vai aos playoffs da Pro League!</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        <div class="video">
+            <video controls>
+                <source  src="media/video.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        
+        <p class="paragraph-video">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Eos unde dolorem esse laborum officiis quod nulla, ducimus nostrum.
             Voluptate doloremque quidem nemo, aut tenetur commodi magnam dicta deserunt unde assumenda!
-            <div class="video">
-                <video controls>
-                    <source src="video.mp4" type="video/mp4"/>
-                </video>
-            </div>
+        <span class="audio">
+            <audio src="media/fallen.mp3"></audio>
+            <button class="btn-play-audio"><i class="ph-play"></i></button>
+        </span>
         </p>
-    
 
-        
-            <div class="audio">
-                <audio src="fallen.mp3"></audio>
-                <button>Play</button>
-            </div>
+          
     </div>
 
 </section>
 
-
-
-<script>
-    const button = document.querySelector('button')
-    button.addEventListener('click', function(){
-    const audio = document.querySelector('audio')
-    audio.play()
-    }
-    )
-</script>
-
-<script>
-var video = document.querySelector('video');
-var cutVideo = false;
-    video.ontimeupdate = ()=>{
-        if (video.currentTime >= 16 && cutVideo == false){
-            cutVideo = true;
-            video.currentTime = 33;
-            video.play();
-        } 
-    };
-</script>
-
-
-
 <footer><p>Todos os direitos Reservados!</p></footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
